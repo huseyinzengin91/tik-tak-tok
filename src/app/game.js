@@ -206,17 +206,17 @@ class Game extends React.Component {
     this.timeouts.push(timeoutId);
   }
 
-  click(e) { 
-    if (e.target.className === "egg") {
+  click(e) {
+    if (e.target.className.includes("egg")) {
       new Audio(increaseSound).play();
       this.increaseClickScore();
-    } else if (e.target.className === "heart") {
+    } else if (e.target.className.includes("heart")) {
       new Audio(increaseSound).play();
       this.increaseHeart();
-    } else if (e.target.className === "freeze") {
+    } else if (e.target.className.includes("freeze")) {
       new Audio(increaseSound).play();
       this.setState({ freezeBonusShow: false, freezeBonusActive: true });
-    } else if (e.target.className === "dagger") {
+    } else if (e.target.className.includes("dagger")) {
       new Audio(decreaseSound).play();
       this.setState({ daggerBonusShow: false });
       this.decreaseClickScore(true);
@@ -303,7 +303,7 @@ class Game extends React.Component {
         >
           <img
             alt=""
-            className="egg"
+            className="egg no-select"
             src={egg}
             width={GAME.OBJECT_SIZE}
             style={{
@@ -316,7 +316,7 @@ class Game extends React.Component {
           {this.state.heartBonusShow ? (
             <img
               alt=""
-              className="heart"
+              className="heart no-select"
               style={{
                 position: "absolute",
                 left: this.state.heartPosition.x,
@@ -332,7 +332,7 @@ class Game extends React.Component {
           {this.state.daggerBonusShow ? (
             <img
               alt=""
-              className="dagger"
+              className="dagger no-select"
               style={{
                 position: "absolute",
                 left: this.state.daggerPosition.x,
@@ -348,7 +348,7 @@ class Game extends React.Component {
           {this.state.freezeBonusShow ? (
             <img
               alt=""
-              className="freeze"
+              className="freeze no-select"
               style={{
                 position: "absolute",
                 left: this.state.freezePosition.x,
