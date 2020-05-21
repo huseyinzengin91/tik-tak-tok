@@ -1,5 +1,6 @@
 import React from "react";
 import {SCREEN} from './constants';
+import chick from './../assets/chick.svg';
 
 class Lobby extends React.Component {
   goToLevelPage(){
@@ -10,6 +11,9 @@ class Lobby extends React.Component {
   render() {
     return (
       <div style={{ display: "flex", flexDirection: "column" }}>
+
+        <img src={chick} alt="" width="64" style={{margin: "0 auto", padding:"10px 0"}} />
+
         <h3 className="lobby-label">Enter the username</h3>
 
         <input
@@ -25,7 +29,7 @@ class Lobby extends React.Component {
         <div
           style={{ height: "2px", background: "#45046a", margin: "5px 0px" }}
         ></div>
-        <button className="lobby-button" type="button" >
+        <button className="lobby-button" type="button">
           Scores
         </button>
       </div>

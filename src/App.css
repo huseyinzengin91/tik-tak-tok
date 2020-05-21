@@ -1,62 +1,38 @@
-*{
+* {
   padding: 0;
   margin: 0;
   touch-action: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
 }
 
 .App {
   height: 100%;
-  display:flex;
-  justify-content :center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #5c2a9d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-html, body, #root, .App{
-  height: 100%;
-}
-
-.lobby-label{
+.lobby-label {
   color: #fff;
   margin-bottom: 5px;
+  text-align: center;
 }
 
-.lobby-text-input{
+.lobby-text-input {
   width: 100%;
   height: 36px;
   font-size: 18px;
@@ -66,61 +42,61 @@ html, body, #root, .App{
   color: #45046a;
 }
 
-.lobby-button{
-  width:100%;
+.lobby-button {
+  width: 100%;
   height: 36px;
   font-size: 18px;
-  background: #45046a; 
+  background: #45046a;
   color: #fff;
   border: none;
   outline: none;
 }
 
-
-.level-label{
+.level-label {
   color: #fff;
   margin-bottom: 5px;
 }
 
-.level-option{
-  width:100%;
+.level-option {
+  width: 100%;
   height: 36px;
   font-size: 18px;
-  background: #fff;
-  border: 2px solid #45046a; 
-  color: #45046a;
+  border: none;
+  background: #45046a;
+  color: #fff;
   outline: none;
-  margin:5px 0px;
+  margin: 5px 0px;
   cursor: pointer;
 }
 
-.level-option.selected{
-  background: #45046a;
-  color: #fff;
+.level-option.selected {
+  background: #fff;
+  border: 1px solid #45046a;
+  color: #45046a;
   border: none;
 }
 
-.level-start{
-  width:100%;
+.level-start {
+  width: 100%;
   height: 36px;
   font-size: 18px;
-  background: #45046a; 
+  background: #45046a;
   color: #fff;
   border: none;
   outline: none;
 }
 
-.level-counter{
+.level-counter {
   font-size: 96px;
   color: #fff;
   font-weight: 700;
 }
 
-.game-over-home-btn{
-  width:100%;
+.game-over-home-btn {
+  width: 100%;
   height: 36px;
   font-size: 18px;
-  background: #45046a; 
+  background: #45046a;
   color: #fff;
   border: none;
   outline: none;

@@ -9,7 +9,7 @@ import GameOver from "./app/game-over";
 function App() {
   const [screen, setScreen] = useState(SCREEN.LOBBY);
   const [username, setUsername] = useState("");
-  const [level, setLevel] = useState(LEVEL.MEDIUM);
+  const [level, setLevel] = useState(LEVEL.EASY);
   const [score, setScore] = useState(0);
 
   return (

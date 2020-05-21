@@ -7,6 +7,8 @@ import egg from "./../assets/egg.svg";
 import dagger from "./../assets/dagger.svg";
 import heart from "./../assets/heart.svg";
 import freeze from "./../assets/freeze.svg";
+import increaseSound from './../assets/increase.mp3';
+import decreaseSound from './../assets/decrease.mp3';
 
 class Game extends React.Component {
   constructor(props) {
@@ -204,18 +206,23 @@ class Game extends React.Component {
     this.timeouts.push(timeoutId);
   }
 
-  click(e) {
+  click(e) { 
     if (e.target.className === "egg") {
+      new Audio(increaseSound).play();
       this.increaseClickScore();
     } else if (e.target.className === "heart") {
+      new Audio(increaseSound).play();
       this.increaseHeart();
     } else if (e.target.className === "freeze") {
+      new Audio(increaseSound).play();
       this.setState({ freezeBonusShow: false, freezeBonusActive: true });
     } else if (e.target.className === "dagger") {
+      new Audio(decreaseSound).play();
       this.setState({ daggerBonusShow: false });
       this.decreaseClickScore(true);
       this.decreaseHeart(true);
     } else {
+      new Audio(decreaseSound).play();
       this.decreaseClickScore(false);
       this.decreaseHeart(false);
     }
