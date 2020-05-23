@@ -14,7 +14,7 @@ function App() {
   const [score, setScore] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App" onDoubleClick={(e) => e.preventDefault()}>
       {screen === SCREEN.LOBBY ? (
         <Lobby
           username={username}

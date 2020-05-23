@@ -22,7 +22,7 @@ class Scores extends React.Component {
 
   render() {
     return (
-      <div style={{ color: "#fff", textAlign: "center" }}>
+      <div className="no-select" style={{ color: "#fff", textAlign: "center" }}>
         <h1>Scores</h1>
         <h2>HighScore {this.scoreHistory.highScore}</h2>
 

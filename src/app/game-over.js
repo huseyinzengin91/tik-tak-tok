@@ -5,7 +5,7 @@ import { SCREEN } from "./constants";
 class GameOver extends React.Component {
   render() {
     return (
-      <div className="game-over">
+      <div className="game-over no-select">
         <img alt="" src={chick} width="72" height="72" />
         Game Over {this.props.username} <br /> Your Score: {this.props.score}
         <button
