@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tik Tak Tok
 
-## Available Scripts
+### Nedir? / Nasıl oynanır?
+> Dikkat odaklı basit bir oyun olup oyun içerisindeki hedef, ekranda görüntülenen yumurta nesnesine tıklamak, evet sadece bu kadar :) Tabi bunu yaparken dikkat etmeniz gereken noktalar var. Yumurta bazı sürelerde yer değiştiriyor olacak ve bu süreçte yumurta dışında boş bir alana tıklanması durumunda toplanan puanlarınız düşecektir. Puanınızı düşüren bir diğer unsur ise hançer nesnesi. Bu nesne 2 can ve 15 puanınızı götürebilir.
+>Canlarınızı tekrar geri kazanmak için ekranda beliren kalp nesnesine tıklayabilirsiniz, bu bonus sizin can haklarınızı tamamlayacaktır.
+>Bununla beraber uygulama içerisinde yüksek puan almanızı sağlayan x10, x50 ve x100 bonus nesneleri var. Bu nesnelere tıklamanız durumunda belirli bir süre boyunca puanlarınız katlanarak artıyor olacak.
+>Son olarak seri bir şekilde puan almak için dondurma bonusunu yakalayabilirsiniz. Bu bonus ekranda görüntülenen yumurta nesnesini belli bir süre( 5 saniye ) daha sabit olarak yerinde tutar.
+---
+### Nereden oynayabilirim?
+>Şu adresten hızlıca erişebilirsiniz: https://tiktaktok.now.sh
+Not: Bu uygulama mobil cihazlar üzerinde vakit geçirmek için hazırlandığından masaüstü versiyonda oynamak zor olabilir :)
+---
+### Oyun modları neledir?
+>Basit olarak iki adet oyun modu var 
+ - Kolay mod ile oynanması durumunda toplamda 60 saniye süreniz olup, bonus nesneleri ekranda 2 defa görünüyor olacaktır.
+ - Orta mod ile oynanması durumunda toplamda 30 saniye süreniz olup, bonus nesneleri ekranda 3 defa görünüyor olacaktır.
+---
+### Burası developer arkadaşlar için :)
+>Uygulamayı derlemek için 
+```
+npm install
+ya da
+yarn i
+```
+>Uygulamayı çalıştırmak için
+```
+npm run start
+ya da
+yarn start
+```
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Görseller
+![](https://raw.githubusercontent.com/huseyinzengin91/tik-tak-tok/master/preview/image1.png)
+![](https://raw.githubusercontent.com/huseyinzengin91/tik-tak-tok/master/preview/image2.png)
+![](https://raw.githubusercontent.com/huseyinzengin91/tik-tak-tok/master/preview/image3.png)
+![](https://raw.githubusercontent.com/huseyinzengin91/tik-tak-tok/master/preview/image4.png)
+![](https://raw.githubusercontent.com/huseyinzengin91/tik-tak-tok/master/preview/image5.png)
