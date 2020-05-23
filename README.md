@@ -18,7 +18,7 @@ Not: Bu uygulama mobil cihazlar üzerinde vakit geçirmek için hazırlandığı
  - Orta mod ile oynanması durumunda toplamda 30 saniye süreniz olup, bonus nesneleri ekranda 3 defa görünüyor olacaktır.
 ---
 ### Burası developer arkadaşlar için :)
->Uygulamayı derlemek için 
+>Uygulamayı derlenebilir hale getirme için 
 ```
 npm install
 ya da
