@@ -5,6 +5,7 @@ import Lobby from "./app/lobby";
 import Level from "./app/level";
 import Game from "./app/game";
 import GameOver from "./app/game-over";
+import Scores from "./app/scores";
 
 function App() {
   const [screen, setScreen] = useState(SCREEN.LOBBY);
@@ -29,8 +30,10 @@ function App() {
           setScore={setScore}
           setScreen={setScreen}
         />
+      ) : screen === SCREEN.SCORES ? (
+        <Scores setScreen={setScreen} />
       ) : (
-        <GameOver score={score} username={username} setScreen={setScreen}/>
+        <GameOver score={score} username={username} setScreen={setScreen} />
       )}
     </div>
   );
