@@ -3,6 +3,7 @@ export const SCREEN = {
   LEVEL: 1,
   GAME_BOARD: 2,
   GAME_OVER: 3,
+  SCORES: 4,
 };
 
 export const LEVEL = {
@@ -21,5 +22,6 @@ export const GAME = {
   DAGGER_SCORE_DECREASE: 15,
   DAGGER_HEART_DECREASE: 2,
   FREEZE_TIME: 5, //second
-  BONUS_SHOW_TIME: 2 //second
+  BONUS_SHOW_TIME: 2, //second
+  LOCAL_DATA: "tiktaktokhistory"
 }
