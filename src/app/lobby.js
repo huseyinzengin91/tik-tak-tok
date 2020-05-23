@@ -29,7 +29,7 @@ class Lobby extends React.Component {
         <div
           style={{ height: "2px", background: "#45046a", margin: "5px 0px" }}
         ></div>
-        <button className="lobby-button" type="button">
+        <button className="lobby-button" type="button" onClick={() => this.props.setScreen(SCREEN.SCORES)}>
           Scores
         </button>
       </div>

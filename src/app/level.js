@@ -1,5 +1,5 @@
 import React from "react";
-import {SCREEN, LEVEL} from './constants';
+import { SCREEN, LEVEL } from "./constants";
 
 class Level extends React.Component {
   constructor(props) {
@@ -38,7 +38,8 @@ class Level extends React.Component {
 
             <button
               className={
-                "level-option " + (this.props.level === LEVEL.EASY ? "selected" : "")
+                "level-option " +
+                (this.props.level === LEVEL.EASY ? "selected" : "")
               }
               onClick={() => this.props.setLevel(LEVEL.EASY)}
             >
@@ -46,7 +47,8 @@ class Level extends React.Component {
             </button>
             <button
               className={
-                "level-option " + (this.props.level === LEVEL.MEDIUM ? "selected" : "")
+                "level-option " +
+                (this.props.level === LEVEL.MEDIUM ? "selected" : "")
               }
               onClick={() => this.props.setLevel(LEVEL.MEDIUM)}
             >
