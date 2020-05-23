@@ -2,22 +2,14 @@ import React from "react";
 
 class ScoreBar extends React.Component {
   render() {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexGrow: 0,
-          padding: "5px 0px",
-          fontSize: "24px",
-          color: "#fff",
-          fontWeight: "700",
-        }}
-      >
-        {this.props.score}
+    return <div className="score-bar no-select">
+      <span>{this.props.score}</span>
+      <div>
+        {this.props.comboTenBonusActive && (<span>x10</span>)}
+        {this.props.comboFiftyBonusActive && (<span>x50</span>)}
+        {this.props.comboHundredBonusActive && (<span>x100</span>)}
       </div>
-    );
+      </div>;
   }
 }
 

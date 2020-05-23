@@ -9,7 +9,7 @@ class HealtBar extends React.Component{
             hearts.push(<img key={index} alt="" src={heart} width="24"/>)
         }
 
-        return <div style={{display: "flex", alignItems:"center"}}>
+        return <div style={{display:"flex-inline", alignItems:"flex-end"}}>
             {hearts}
         </div>
     }
